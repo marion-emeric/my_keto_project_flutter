@@ -11,10 +11,10 @@ ThemeData _asthaTutorialTheme() {
   // Make changes to light() theme
   return base.copyWith(
     colorScheme: base.colorScheme.copyWith(
-      // AppBar
+        // AppBar
         primary: const Color.fromARGB(202, 13, 42, 10),
         onPrimary: Colors.white,
-        secondary: const Color.fromARGB(255, 223, 27, 12),
+        secondary: const Color.fromARGB(255, 255, 255, 255),
         onSecondary: Colors.white,
         background: const Color.fromARGB(255, 228, 243, 228),
         onBackground: Colors.black),
@@ -36,7 +36,7 @@ TextTheme _asthaTutorialTextTheme(TextTheme base) => base.copyWith(
         fontFamily: "FontsFree-Net-proxima_nova_reg",
         fontSize: 26,
         fontWeight: FontWeight.w400,
-        color: Colors.black,
+        color: Colors.white,
       ),
 // for sub-widgets heading/title
       headline3: base.headline3!.copyWith(
@@ -63,7 +63,7 @@ ElevatedButtonThemeData _elevatedButtonTheme(ElevatedButtonThemeData base) =>
     ElevatedButtonThemeData(
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all<Color>(
-          const Color.fromARGB(202, 13, 42, 10),
+          const Color.fromARGB(255, 255, 189, 183),
         ),
         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
       ),
@@ -72,12 +72,12 @@ ElevatedButtonThemeData _elevatedButtonTheme(ElevatedButtonThemeData base) =>
 InputDecorationTheme _inputDecorationTheme(InputDecorationTheme base) =>
     const InputDecorationTheme(
 // Label color for the input widget
-      labelStyle: TextStyle(color: Colors.black),
+      labelStyle: TextStyle(color: Colors.white),
 // Define border of input form while focused on
       focusedBorder: OutlineInputBorder(
         borderSide: BorderSide(
           width: 1.0,
-          color: Colors.black,
+          color: Colors.white,
           style: BorderStyle.solid,
         ),
       ),

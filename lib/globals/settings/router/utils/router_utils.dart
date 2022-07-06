@@ -3,8 +3,10 @@ enum APP_PAGE {
   onboard,
   auth,
   home,
+  search,
+  recipes,
+  favorite,
 }
-
 
 extension AppPageExtension on APP_PAGE {
   // create path for routes
@@ -18,6 +20,15 @@ extension AppPageExtension on APP_PAGE {
 
       case APP_PAGE.auth:
         return "/auth";
+
+      case APP_PAGE.search:
+        return "/search";
+
+      case APP_PAGE.favorite:
+        return "/favorite";
+
+      case APP_PAGE.recipes:
+        return "/recipes";
 
       default:
         return "/";
@@ -36,6 +47,15 @@ extension AppPageExtension on APP_PAGE {
       case APP_PAGE.auth:
         return "AUTH";
 
+      case APP_PAGE.search:
+        return "Search";
+
+      case APP_PAGE.favorite:
+        return "Favorite";
+
+      case APP_PAGE.recipes:
+        return "Recipes";
+
       default:
         return "HOME";
     }
@@ -46,6 +66,18 @@ extension AppPageExtension on APP_PAGE {
     switch (this) {
       case APP_PAGE.home:
         return "Astha";
+
+      case APP_PAGE.auth:
+        return "Register/SignIn";
+
+      case APP_PAGE.recipes:
+        return "Recipes";
+
+      case APP_PAGE.search:
+        return "Search";
+
+      case APP_PAGE.favorite:
+        return "Your Favorites";
 
       default:
         return "Astha";

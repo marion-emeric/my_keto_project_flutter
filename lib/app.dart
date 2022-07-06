@@ -9,6 +9,7 @@ import 'globals/theme/app_theme.dart';
 class MyApp extends StatefulWidget {
   // Declared fields prefs which we will pass to the router class
   SharedPreferences prefs;
+
   MyApp({required this.prefs, Key? key}) : super(key: key);
 
   @override
